@@ -1,6 +1,6 @@
 def run(fileName)
     import ast
-    info = ast.literal_eval(str(open("./Compile_" + info["name"][:-1] + "/info.txt", "r").readlines()))
+    info = ast.literal_eval(str(open("info.txt", "r").readlines()))
     open("./Compile_" + info["name"][:-1] + "/src/totranslate.txt", "w+").writelines([i for i in open("./" + fileName).readlines()])
     translate()
     open("./Compile_" + info["name"][:-1] + "/src/excute.py", "w+").writelines([i for i in open("./Compile_" + info["name"][:-1] + "/src/totranslate.txt").readlines()])
