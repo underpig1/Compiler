@@ -6,7 +6,7 @@ import webbrowser
 
 root = tk.Tk()
 root.geometry("700x500")
-info = ast.literal_eval(str(open("info.txt", "r").readlines()))
+info = ast.literal_eval(str(open("./Compile_" + info["name"][:-1] + "/src/info.txt", "r").readlines()))
 root.title(info["name"][:-1] + " Developer Environment")
 pythonInfo = {"classcall": " ", "funccall": " ", "varint": "", "varstr": "", "varfloat": "", "vararr": "", "vardict": "", "end": "", "varpar": ",", "vardictval": ":", "varparaclose": "]", "varparaopen": "[", "varinclose": "]", "varinopen": "[", "varinsplice": ":", "varsetchar": "=", "func": "def", "funcclose": "", "funcopen": "", "funcparaclose": "):", "funcparaopen": "(", "funcparapar": ",", "funcreturn": "return", "funcdefaultparasetchar": "=", "comone": "#", "commultiopen": "#", "commulticlose": "", "loopif": "if", "loopclose": "", "loopopen": "", "loopparaclose": ":", "loopparaopen": " ", "loopelseif": "elif", "loopelse": "else", "looprep": "", "loopwhile": "while", "loopwaituntil": "","loopwait": "for", "loopfor": "for", "loopistrue": "==", "loopisfalse": "=!", "loopis": "==", "loopand": "and", "loopor": "or", "loopgreat": ">", "loopless": "<", "loopgreatequal": ">=", "looplessequal": "<=", "loopadd": "+", "loopsub": "-", "loopmult": "*", "loopdiv": "/", "loopexpo": "**", "loopmod": "%", "loopinc": "+= 1", "loopdec": "-= 1", "loopaddto": "+=", "loopsubto": "-=", "loopmultto": "*=", "loopdivto": "/=", "loopbreak": "break", "loopcont": "continue", "class": "class", "classclose": "", "classopen": ":", "classinhclose": ")", "classinhopen": "(", "classself": "self", "classvar": ".", "classfunc": ".", "classinit": "__init__", "classdel": "__del__", "impre": "import ", "imclose": "", "imopen": "", "mpass": "pass", "mglob": "global", "mread": "read", "mwrite": "write"}
 
