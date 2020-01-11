@@ -1,2 +1,2 @@
 #!/usr/local/bin/python3
-exec(open("ide.py", "r").read())
+exec(open("src/ide.py", "r").read())
