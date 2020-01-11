@@ -42,15 +42,15 @@ def runFile():
     run(currentFile)
 
 def run(fileName):
-    open("./Compile_" + info["name"][:-1] + "/src/totranslate.txt", "w+").writelines([i for i in open("./" + fileName).readlines()])
+    open("totranslate.txt", "w+").writelines([i for i in open("./" + fileName).readlines()])
     translate()
-    open("./Compile_" + info["name"][:-1] + "/src/excute.py", "w+").writelines([i for i in open("./Compile_" + info["name"][:-1] + "/src/totranslate.txt").readlines()])
+    open("excute.py", "w+").writelines([i for i in open("totranslate.txt").readlines()])
     try:
-        exec("./Compile_" + info["name"][:-1] + "/src/excute.py")
+        exec(open("excute.py", "r").read())
     except Exception as exception:
         shell.insert(tk.END, str(exception))
-    os.remove("./Compile_" + info["name"][:-1] + "/src/totranslate.txt")
-    os.remove("./Compile_" + info["name"][:-1] + "/src/excute.py")
+    os.remove("totranslate.txt")
+    os.remove("excute.py")
 
 def helpFile():
     global helpText
@@ -77,7 +77,7 @@ def helpFile():
     helpText.config(state = tk.DISABLED)
 
 def translate():
-    with fileinput.FileInput("./Compile_" + info["name"][:-1] + "/src/totranslate.txt", inplace = True) as file:
+    with fileinput.FileInput("totranslate.txt", inplace = True) as file:
         for line in file:
             for word in line.split():
                 for key, value in info.items():
