@@ -1,4 +1,4 @@
-def run(fileName)
+def run(fileName):
     import ast
     info = ast.literal_eval(str(open("info.txt", "r").readlines()))
     open("./Compile_" + info["name"][:-1] + "/src/totranslate.txt", "w+").writelines([i for i in open("./" + fileName).readlines()])
