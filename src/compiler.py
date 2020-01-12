@@ -1,3 +1,4 @@
+#!/usr/local/bin/python3
 import tkinter as tk
 from tkinter import ttk
 import os
@@ -263,19 +264,19 @@ def enter():
             file.write(text.get("1.0", tk.END))
             file.close()
         urllib.URLopener().retrieve("https://raw.githubusercontent.com/underpig1/Compiler/master/requests/ide.py", "./Compile_" + info["name"][:-1] + "/src/ide.py")
-        urllib.URLopener().retrieve("https://raw.githubusercontent.com/underpig1/Compiler/master/requests/launch.command", "./Compile_" + info["name"][:-1] + "/launch.command"
+        urllib.URLopener().retrieve("https://raw.githubusercontent.com/underpig1/Compiler/master/requests/launch.command", "./Compile_" + info["name"][:-1] + "/launch.command")
         info.update({"tag":"." + info["name"][:-1][:3].lower()})
         open("./Compile_" + info["name"][:-1] + "/src/info.txt", "w+").write(str(info))
+        os.system("cd /Users/user/Desktop/Compile_" + info["name"][:-1])
         os.system("chmod +x launch.command")
     elif challenge == 91:
-        label.config(text = "Build")
-        example.config(text = "")
-        translate()
+        label.config(text = "Language Complete")
+        example.config(text = "Access the IDE with the launch.command file\nEdit the IDE with the ide.py file")
     elif challenge == 92:
-        label.config(text = "Build Settings")
-        example.config(text = "")
+        os.system("cd /Users/user/Desktop/Compile_" + info["name"][:-1])
+        os.system("./launch.command")
 
-# TODO change/select parts order after each section; project tabs; not, and; add custom translation; function call; line-ending raise errors; line-ending auto-return and -indent; compiler language; call class keyword
+# TODO change/select parts order after each section; project tabs; not, and; add custom translation; function call; line-ending raise errors; line-ending auto-return and -indent; compiler language; call class keyword; standard libraries
 def reset(texts, examples, name):
     info.update({name:text.get("1.0", tk.END)})
     label.config(text = texts)
