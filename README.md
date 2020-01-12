@@ -64,10 +64,8 @@ $ open launch.command
 ```
 Be sure to modify the directory to include your user's name and the name of your language where it has them.
 #### I can't open the Compiler app
-You must have Python installed
-Type this into your terminal:
+You must have Python 3.0 or higher installed on your device.
+To install with Homebrew:
 ```
-$ cd /Users/user/Desktop/Compile_LanguageName
-$ chmod +x launch.command
-$ open launch.command
+$ brew install python3
 ```
