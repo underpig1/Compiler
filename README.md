@@ -10,7 +10,10 @@ $ git clone https://github.com/underpig1/Compiler
 ```
 and unzip and open the Compiler.app.zip file in the app folder.
 ### Use
-Answer the questions in the application to create your own custom language. Create a standard library for you, written in your language or in Python. If spaces are desired after declarations (int[ ]i = 0;), add spaces to your answers(int[ ]). Once the language is constructed, the IDE can be accessed in the newly-created folder titled Compile_LanguageName. Double-click the launch.command 
+Answer the questions in the application to create your own custom language. Create a standard library for you, written in your language or in Python. If spaces are desired after declarations (int[ ]i = 0;), add spaces to your answers(int[ ]). Once the language is constructed, the IDE can be accessed in the newly-created folder titled Compile_LanguageName. Double-click the launch.command file, or write into your terminal:
+```
+$ ./Users/user/Desktop/Compile_LanguageName/launch.command
+```
 #### Question Reference
 Refer to this guide if you are unsure of what any as to what the questions intend.
 
@@ -50,3 +53,21 @@ Initialization and Destruction Functions: | The class functions to call when the
 Import Prefix: | The import function: [import]
 Pass Statement: | The pass statement: [pass]
 Global Variable Declaration Keyword: | The keyword to declare a global variable: [global]
+
+### Troubleshooting
+#### I can't open the IDE
+Type this into your terminal:
+```
+$ cd /Users/user/Desktop/Compile_LanguageName
+$ chmod +x launch.command
+$ open launch.command
+```
+Be sure to modify the directory to include your user's name and the name of your language where it has them.
+#### I can't open the Compiler app
+You must have Python installed
+Type this into your terminal:
+```
+$ cd /Users/user/Desktop/Compile_LanguageName
+$ chmod +x launch.command
+$ open launch.command
+```
