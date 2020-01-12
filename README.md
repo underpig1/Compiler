@@ -1,3 +1,3 @@
 ![Compiler Logo](images/compiler.png)
-Compiler
+#### Compiler
 Create a custom language in minutes!
