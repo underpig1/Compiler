@@ -10,7 +10,7 @@ $ git clone https://github.com/underpig1/Compiler
 ```
 and unzip and open the Compiler.app.zip file in the app folder.
 ### Use
-Answer the questions in the application to create your own custom language. Create a standard library for you, written in your language or in Python. If spaces are desired after declarations (int[ ]i = 0;), add spaces to your answers(int[ ]).
+Answer the questions in the application to create your own custom language. Create a standard library for you, written in your language or in Python. If spaces are desired after declarations (int[ ]i = 0;), add spaces to your answers(int[ ]). Once the language is constructed, the IDE can be accessed in the newly-created folder titled Compile_LanguageName. Double-click the launch.command 
 #### Question Reference
 Refer to this guide if you are unsure of what any as to what the questions intend.
 
@@ -34,13 +34,19 @@ Dictionary Value Declaration Character: | The character to set the value of any 
 Index Closings and Openings: | The character to declare the start and end of an index of a dictionary or list: [], []
 Parameter Closings and Openings: | The character to declare the start and end of a parameter input: [), (]
 Container Closings and Openings: | The character to declare the start and end of a loop, function, or class: [}, {]
+Inheritance Closings and Openings: | The character to declare the start and end of an inheritance statement: [), (]
 Index Splice: | The character to declare a splicing when indexing: [:]
 Return: | The function to return a variable in an outer function: [return]
-Comments: | character to declare a comment: [#]
-Logical Operators: |  conditional statements: [===, ==, !=, >, <, >=, <=, &&, ||]
-Expressions: | mathematical operators: [+, -, /, *, **, %]
-****|****
-Self Expressions: | mathematical operators on a variable: [+=, -=, /=, *=]
-Break Statement: | break loop: [break]
-Continue Statement: | restart a loop: [continue]
-Property Keyword: | restart a loop: [continue]
+Comments: | The character to declare a comment: [#]
+Logical Operators: | The conditional statements: [===, ==, !=, >, <, >=, <=, &&, ||]
+Expressions: | The mathematical operators: [+, -, /, *, **, %]
+Self Expressions: | The mathematical operators on a variable: [+=, -=, /=, *=]
+Break Statement: | The break statement: [break]
+Continue Statement: | The restart statement: [continue]
+Property Keyword: | The keyword to declare private variables: [this]
+Variable and Function Access Characters: | The character to access private variables and to call private functions: [.]
+Call Keywords: | The keywords to call classes and functions: [new]
+Initialization and Destruction Functions: | The class functions to call when the class is initialized or destroyed: [__init__, __del__]
+Import Prefix: | The import function: [import]
+Pass Statement: | The pass statement: [pass]
+Global Variable Declaration Keyword: | The keyword to declare a global variable: [global]
