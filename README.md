@@ -1,6 +1,6 @@
 ![Compiler Logo](images/compiler.png)
 ## Compiler
-Create a custom language with specialized syntax and with custom libraries in minutes.
+Create a custom language with specialized syntax and with custom libraries in minutes. Automatically creates an editor with code-running abilities, compiling with Python.
 ### Installation
 Download the latest version of the Compiler.app.zip file in the app folder of this repository. Unzip the application, and open it.
 ###### OR
