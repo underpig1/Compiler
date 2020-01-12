@@ -1,2 +1,1 @@
-![Compiler Logo](images/compile)
-# Compiler
+![Compiler Logo](images/compiler.png)
