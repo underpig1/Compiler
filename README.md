@@ -12,7 +12,7 @@ and unzip and open the Compiler.app.zip file in the app folder.
 ### Use
 Answer the questions in the application to create your own custom language. Create a standard library for you, written in your language or in Python. If spaces are desired after declarations (int[ ]i = 0;), add spaces to your answers(int[ ]).
 #### Question Reference
-Refer to this guide if you are unsure of what any of the questions are.
+Refer to this guide if you are unsure of what any as to what the questions intend.
 
 Term | Definition
 ---- | ----
